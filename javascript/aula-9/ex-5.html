@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulação de dom - curso em video</title>
+
+    <style>
+        body {
+            background: rgb(233, 199, 155);
+            color: white;
+            font: normal 28px arial;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Manipulação de DOM - Iniciando os estudos</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione porro laudantium odio rem earum excepturi sint veniam illo, facilis aliquid distinctio consequuntur perferendis vitae repellat quidem id alias. Sint, quidem?</p>
+
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript </p>
+
+    <div name="msg">Clique em mim</div>
+
+    <script>
+        let corpo = window.document.body
+        let p1 = window.document.getElementsByTagName('p')[1]
+        let d = window.document.getElementsByTagName('p') [0]
+        d.innerText = 'Olá...'
+        /*let d = window.document.getElementById('msg')
+        d.style.background = 'green'
+       /* window.document.getElementById('msg').innerText = 'Olá...'
+       
+        /*d.innerText = 'Estou aguardando...'
+        /*window.document.write('Está escrito assim: ' + p1.innerText)
+        /*corpo.style.background = 'black'
+        p1.style.color = 'red'
+        /*document.write(p1.innerHTML)
+        /*window.alert(p1.innerText)*/
+    </script>
+</body>
+</html>
