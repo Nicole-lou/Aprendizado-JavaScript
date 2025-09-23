@@ -1,5 +1,6 @@
 # Aprendizado JavaScript 📓
 ## Compartilhando meus estudos de Javascript
+- [Aulas do Gustavo Guanabara Curso de Javascript] (https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1)
 
 Este repositório é um espaço para organizar meus projetos, exercícios e anotações enquanto aprofundo meus conhecimentos em JavaScript, 
 desde os conceitos básicos até tópicos mais avançados.
