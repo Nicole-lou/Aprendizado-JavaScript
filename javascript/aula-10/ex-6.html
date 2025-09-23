@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+    #area {
+        font: normal 28px arial;
+        background-color: rgb(55, 148, 55);
+        color: white;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+
+    </style>
+
+</head>
+<body>
+
+   <!-- <div id="area" onclick="clicar ()" onmouseenter="entrar()" onmouseout="sair()">
+    Interaja..
+    </div> 
+    Forma de fazer no HTML
+    -->
+
+     <div id="area">
+    Interaja..
+    </div>
+
+    <!--Ao colocar o onclick, ele chama a function clicar que nomeamos na div acima, e a function que foi criada ela muda ao clicar na div, o innerText muda o texto e a innerHTML muda o HTML
+    onclick - quando clicar
+    onmouseenter - quando o mouse entra
+    onmouseout - quando o mouse sai
+    -->
+
+
+   <script>
+    // ficar um escopo global para todas as funções
+    let area = window.document.getElementById('area')
+    // adicionando os eventos para  o click, mouseenter e mouseout e aqui fazendo no javascript
+    area.addEventListener('click', clicar);
+    area.addEventListener('mouseenter', entrar);
+    area.addEventListener('mouseout', sair);
+    function clicar() {
+        //let area = window.document.getElementById('area')
+        area.innerText = 'Clicou!'
+        //mudar de cor na primeira function
+        area.style.background = 'red'
+    }
+
+    function entrar () {
+        area.innerText = 'Entrou!'
+    }
+
+    function sair () {
+        area.innerText = 'Saiu!'
+        // E aqui vai voltar para a cor verde
+        area.style.background = 'green'
+    }
+
+
+   </script> 
+</body>
+</html>
