@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN - Exercício 10</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+    p {
+        font-size: 1.5rem;
+    }
+
+    body {
+        background-color: rgb(159, 178, 159);
+        color: white;
+    }
+    
+    </style>
+
+</head>
+<body>
+
+    <h1 class="p-2 m-2">Sistema de Multas</h1>
+   <p class="p-2 m-2">Velocidade do carro:</p> <input class="p-2 m-2" type="number" name="txtvel" id="txtvel"> 
+   <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+function calcular () {
+let txtv = document.getElementById('txtvel')
+let res = document.getElementById('res')
+let vel  = Number(txtv.value)
+res.innerHTML = `<p class="p-2 m-2">Sua velocidade atual é de <strong>${vel}Km/h </strong></p>`
+
+
+if (vel > 60) {
+    res.innerHTML += `<p class="p-2 m-2">Voce ultrapassou a velocidade permitida. <strong>MULTADO!</strong> </p>`
+
+} else (vel < 60) 
+{
+res.innerHTML += (`<p class="p-2 m-2">Voce esta na velocidade permitida </p>`)
+   
+}
+res.innerHTML += `<p class="p-2 m-2">Dirija sempre usando cinto de segurança </p>`
+
+}
+</script>
+</body>
+</html>
