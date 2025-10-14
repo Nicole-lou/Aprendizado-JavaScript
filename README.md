@@ -17,4 +17,6 @@ desde os conceitos básicos até tópicos mais avançados.
  
   * Manipulação de Dom - Com HTML
  
+  - new Date() e date.getHours() - exibindo horas em Javascript 
+ 
 - Vou atualizando enquanto vou aprendendo.. 📘
