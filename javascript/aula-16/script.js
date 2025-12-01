@@ -11,10 +11,24 @@ function contar() {
       let i = Number(inicio.value)
       let f = Number(fim.value)
       let p = Number(passo.value)
-
-      for(let c = i; c<=f; c+=p) {
+      if (p <= 0) { 
+        window.alert('Passo inválido! Considerando PASSO 1')
+        p = 1
+      }
+      if (i < f) {
+        // contagem crescente
+        for(let c = i; c<=f; c+=p) {
         res.innerHTML += ` ${c}  \u{1F609}`
       }
+
+      } else {
+        // contagem regressiva
+        for(let c = i; c>=f; c -= p) {
+            res.innerHTML += ` ${c}  \u{1F609}`
+          }
+      
+        }
+      
     }
 
 }
