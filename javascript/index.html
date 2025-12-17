@@ -3,11 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercícios JS</title>
+    <title>Calculadora de idade</title>
+
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+        background-color: #f0f2f5;
+    }
+
+    #meuModal {
+       display: none; /* Começa escondido */
+       position: fixed;
+       top: 50%; left: 50%;
+       transform: translate(-50%, -50%);
+       padding: 20px;
+        background: white;
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    #overlay {
+        display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+    }
+
+    button {
+        padding: 10px 25px;
+        background-color: #df9355;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    #anoAtual, #anoNascimento {
+        padding: 10px;
+        margin: 5px 0;
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+
+
+
+
+    </style>
 </head>
 <body>
 
+    <div>
 
-<script src="exercicios.js"></script>
+        <h2>Calculadora de idade</h2>
+        <input type="number" id="anoAtual" placeholder="Ano Atual">
+        <input type="number" id="anoNascimento" placeholder="Ano de Nascimento">
+        <br>
+        <button onclick="calcularIdade()">Calcular Idade</button>
+    </div>
+
+    <div id="overlay"></div>
+    <div id="meuModal">
+    <h3>Sua idade:</h3>
+    <p id="resultadoIdade"></p>
+    <button onclick="fecharModal()" style="background: #dc3545;">Fechar</button>
+    </div>
+
+
+
+  
+
+
+<script src="idade.js"></script>
 </body>
 </html>
