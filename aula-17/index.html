@@ -10,27 +10,27 @@
 </head>
 <body>
 
-    <header>
-        <h1>Analisador de Números</h1>
-
-    </header>
 
   <section>
-    <div>
-    Número entre 1 e 100:
+    <div id="form">
+    <h3>Selecione um Número entre 1 e 100:</h3>
+    <div class="formulario">
     <input type="number" name="numero" id="numero">
-    <input type="button" value="Adicionar" id="btnAnalisar">
-    <br>
+    <input type="button" value="Adicionar" onclick="adicionar" id="btnAnalisar">
+    </div>
     <select name="lista" id="lista" size="6"></select>
-
-
+    </div>
+    <div id="res">
+   
     </div>
 
 
   </section>
 
+   
 
 
-    <script src="script.js"></script>
+
+    <script src="analisador.js"></script>
 </body>
 </html>

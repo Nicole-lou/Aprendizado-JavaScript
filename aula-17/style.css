@@ -1,24 +1,65 @@
 body {
-    background-color: antiquewhite;
+   background-color: antiquewhite;
     font: normal 16px Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 header {
-    color: tan;
+    color: rgb(216, 140, 41);
     text-align: center;
 }
 
-section {
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    width: 80px;
-    margin: auto;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+#form h3 {
+    text-align: center;
+    color: rgb(216, 140, 41);
 }
 
-footer {
-   color: white;
-   text-align: center;
-   font-style: italic;
+section {
+  background: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 400px; /* Largura aumentada para caber o conteúdo */
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    
+    /* Ativando o alinhamento central */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Cria um espaço uniforme entre os elementos */
+}
+
+#form h3 {
+    color: rgb(216, 140, 41);
+    margin-bottom: 5px;
+}
+
+/* Estilo para deixar o input e o botão organizados */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+select#lista {
+    width: 150px;
+    margin-top: 10px;
+}
+
+#res {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
