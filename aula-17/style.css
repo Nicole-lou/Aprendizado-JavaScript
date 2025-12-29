@@ -1,0 +1,24 @@
+body {
+    background-color: antiquewhite;
+    font: normal 16px Arial, sans-serif;
+}
+
+header {
+    color: tan;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 80px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+   color: white;
+   text-align: center;
+   font-style: italic;
+}
