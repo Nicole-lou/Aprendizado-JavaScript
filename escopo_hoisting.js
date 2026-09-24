@@ -1,8 +1,39 @@
 // escopo global
 // {} -> Let e const -> escopo de bloco
 
+/*console.log(x)
+var x = 10; */
 
-let nivelPadrao = "visitante"; // variavel global
+/*console.log(y)
+let y = 10;*/
+
+/*function teste() {
+    console.log(a);
+    var a = 5;
+    console.log(a);
+}
+teste(); */
+
+/*function saudacao() {
+    console.log(mensagem());
+    function mensagem() {
+        return 'Olá, seja bem-vindo(a) ao curso de JavaScript!';
+    }
+}
+saudacao(); */
+
+/*let cor = "azul";
+function mudarCor() {
+  console.log(cor);
+  let cor = "verde";
+}
+mudarCor(); */
+
+for (var i = 0; i < 3; i++) {
+    setTimeout(() => console.log(i), 100);
+}
+
+/*let nivelPadrao = "visitante"; // variavel global
 console.log(nivelPadrao);
 const liberarAcesso = function() {
     console.log("Acesso liberado para: " + nivelPadrao);
@@ -22,7 +53,7 @@ function verificarDepartamento(nomeDepto) {
     verificarUsuario();
 }
 
-verificarDepartamento('TI');
+verificarDepartamento('TI'); */
 
 /*function externa() {
   const mensagem = "Olá da função externa";
