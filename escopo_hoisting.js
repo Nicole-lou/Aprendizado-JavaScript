@@ -1,6 +1,48 @@
 // escopo global
 // {} -> Let e const -> escopo de bloco
 
+function criarContador() {
+    let valor = 0;
+
+    return {
+        incrementar: function() {
+            valor = valor + 1;
+            return valor;
+        },
+
+        resetar: function() {
+            valor = 0;
+            return valor;
+        }
+    };
+
+    /*return function() {
+        valor = valor + 1;
+        return valor;
+    }*/
+}
+
+const contador1 = criarContador();
+console.log(contador1.incrementar());
+console.log(contador1.incrementar());
+console.log(contador1.incrementar());
+
+//resetando o contador
+console.log(contador1.resetar());
+console.log(contador1.incrementar());
+/*const contador1 = criarContador();
+const contador2 = criarContador();
+console.log(contador1()); 
+console.log(contador1()); 
+console.log(contador2()); 
+console.log(contador1()); 
+console.log(contador2());*/
+/*console.log(contador1());
+console.log(contador2());
+console.log(contador1());
+console.log(contador2());*/
+
+
 /*console.log(x)
 var x = 10; */
 
@@ -29,9 +71,9 @@ function mudarCor() {
 }
 mudarCor(); */
 
-for (var i = 0; i < 3; i++) {
+/*for (var i = 0; i < 3; i++) {
     setTimeout(() => console.log(i), 100);
-}
+}*/
 
 /*let nivelPadrao = "visitante"; // variavel global
 console.log(nivelPadrao);
