@@ -28,8 +28,11 @@ console.log(contador1.incrementar());
 console.log(contador1.incrementar());
 
 //resetando o contador
-console.log(contador1.resetar());
-console.log(contador1.incrementar());
+/*console.log(contador1.resetar());
+console.log(contador1.incrementar());*/
+
+console.log(valor);          
+console.log(contador1.valor); 
 /*const contador1 = criarContador();
 const contador2 = criarContador();
 console.log(contador1()); 
