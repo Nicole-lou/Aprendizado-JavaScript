@@ -19,13 +19,6 @@ function criarConta(saldoInicial) {
     }
     return saldo -= valor;
 }
-       /* sacar: (valor) => {
-            if (valor > 0 && valor <= saldo) {
-                return saldo -= valor;
-            }
-            else {
-                return "Saldo insuficiente";
-            } */
     }
     }
 
@@ -35,3 +28,9 @@ console.log(conta1.sacar(30));
 console.log(conta1.sacar(200));   
 console.log(conta1.sacar(-10));   
 console.log(conta1.verSaldo());  
+const contaAna = criarConta(500);
+const contaBia = criarConta(100);
+
+console.log(contaAna.verSaldo());
+console.log(contaBia.verSaldo());
+console.log(contaAna.saldo);
