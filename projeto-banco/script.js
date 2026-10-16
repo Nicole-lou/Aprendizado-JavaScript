@@ -23,14 +23,11 @@ function criarConta(saldoInicial) {
     }
 
 
-const conta1 = criarConta(100);
-console.log(conta1.sacar(30));    
-console.log(conta1.sacar(200));   
-console.log(conta1.sacar(-10));   
-console.log(conta1.verSaldo());  
 const contaAna = criarConta(500);
 const contaBia = criarConta(100);
 
+console.log(contaAna.depositar(200));
+console.log(contaBia.sacar(30));
+console.log(contaBia.sacar(500));
 console.log(contaAna.verSaldo());
 console.log(contaBia.verSaldo());
-console.log(contaAna.saldo);
