@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funções anônimas/ callback</title>
+</head>
+<body>
+    
+
+    <script>
+        // anônimas - funções sem nome
+   /*let exibirSaudacao =   function (nome) {
+            document.write('Ola ' + nome + ', tudo bem?' )
+        }
+
+        exibirSaudacao('joao') */
+
+        // callback - função passada como parâmetro para outra função
+        function exibirArtigo(id, callbackSucesso, callbackErro) {
+            if (true) {
+                callbackSucesso('Funções de callback em JS, '+ 'são funções passadas como parâmetro para outras funções')
+            } else {
+                callbackErro('Erro ao recuperar os dados do artigo')
+            }
+        }
+         let callbackSucesso = function (titulo, descricao) {
+            document.write('<h1>' + titulo + '</h1>')
+            document.write('<hr>')
+            document.write('<p>' + descricao + '</p>')
+         }
+
+         let callbackErro = function(erro) {
+            document.write('<p><b>Erro: </b>' + erro + '</p>')
+         }
+
+        exibirArtigo(1, callbackSucesso, callbackErro );
+    </script>
+</body>
+</html>
