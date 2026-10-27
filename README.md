@@ -14,9 +14,12 @@ desde os conceitos básicos até tópicos mais avançados.
   * Comparação - === (Igualdade estrita) > (maior que) < (menor que)
   * Condicionais - If/Else
   * Loops - For/While
+  * escopo
+  * projetos banco/Lista de tarefas
  
   * Manipulação de Dom - Com HTML
  
   - new Date() e date.getHours() - exibindo horas em Javascript 
+
  
 - Vou atualizando enquanto vou aprendendo.. 📘
